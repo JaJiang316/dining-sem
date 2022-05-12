@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.concurrent.Semaphore;
 
 public class Table {
 
@@ -56,8 +55,8 @@ public class Table {
         return seats;
     }
 
-    public void addSeats(int i) { // adds seats to table
-        seats += i;
+    public void addSeats() { // adds seats to table
+        seats = 4;
     }
 
     public void setSeats() { // sets number of seats

@@ -41,8 +41,8 @@ public class Customer extends Thread implements Runnable {
                 Thread.sleep((long) (Math.random() * 1000)); // checks menu and places order
                 orderingTime = true;
                 ordering.acquire(); // waits until the employee takes their order
-                orderingTime = false;
                 waitFood.acquire(); // waits for the food to be served
+                orderingTime = false;
                 msg("has been served and is eating their food");
                 Thread.sleep((long) (Math.random() * 1000)); // eats food
                 Main.doneEat.acquire();
@@ -63,6 +63,14 @@ public class Customer extends Thread implements Runnable {
             }
         }
         msg("has been served and is leaving the diner.");
+        try {
+            Thread.sleep((long) (Math.random() * 1000)); // leaves diner
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        if (Main.served == Main.numCustomers) {
+            Main.closeStore.release();
+        }
     }
 
     public void msg(String m) {
