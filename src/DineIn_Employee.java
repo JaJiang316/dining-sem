@@ -18,7 +18,7 @@ public class DineIn_Employee extends Thread implements Runnable {
         } catch (InterruptedException e) {
         }
         Main.employeeLine.add(this); // adds employee to line
-        while (Main.served < Main.numCustomers) {
+        while (Main.served < Main.numCustomers) { // while all customers havent been served
             for (Table t : Main.tables) { // for each table check if there is no employee assigned to it if there isnt
                 // assign one
                 if (t.getAssignedEmployee() == null) {
@@ -31,11 +31,6 @@ public class DineIn_Employee extends Thread implements Runnable {
             try {
                 if (Main.dineLine.getQueueLength() > 0 && Main.seated < 12) {
                     assignCustomer();
-                    // for (Table t : Main.tables) {
-                    // System.out.println(
-                    // t.customerSeated.toString() + " " + t.getName() + " " +
-                    // t.customerSeated.size());
-                    // }
                 } else if (Main.dineQueue.isEmpty() && Main.employeeLine.peek() == this) { // if everybody has been
                     // seated
                     for (Table t : tables) { // for each table that the employee is assigned to check if a customer is
@@ -43,9 +38,9 @@ public class DineIn_Employee extends Thread implements Runnable {
                             for (Customer c : t.customerSeated) {
                                 if (c.isOrdering() && t.getAssignedEmployee() == this) {
                                     msg("is taking customer " + c.getName() + " order");
-                                    c.ordering.release();
+                                    c.ordering.release(); // release customer as employee has taken their order
                                     Thread.sleep((long) (Math.random() * 1000)); // prepares order
-                                    c.waitFood.release();
+                                    c.waitFood.release(); // release customer as employee has given their food
                                 }
                             }
                         }
@@ -53,13 +48,13 @@ public class DineIn_Employee extends Thread implements Runnable {
                     for (Table t : tables) {
                         if (t.getPaying() == t.customerSeated.size() && t.getAssignedEmployee() == this) {
                             for (Customer c : t.customerSeated) {
-                                c.bill.release();
+                                c.bill.release(); // gives customer their bill
                                 Main.served++;
                             }
-                            t.setCustomerSeated();
-                            t.setAvailable();
-                            t.addSeats();
-                            t.resetPaying();
+                            t.setCustomerSeated(); // reset customers seated
+                            t.setAvailable(); // set table to available
+                            t.addSeats(); // reset seats to 4
+                            t.resetPaying(); // reset paying customers to 0
                         }
                     }
                 } else { // if customers are waiting to be seated then serve customers currently sitting
@@ -81,19 +76,17 @@ public class DineIn_Employee extends Thread implements Runnable {
                                 c.bill.release();
                                 Main.served++;
                             }
-                            t.setCustomerSeated();
-                            t.setAvailable();
-                            t.addSeats();
-                            t.resetPaying();
+                            t.setCustomerSeated(); // reset customers seated
+                            t.setAvailable(); // set table to available
+                            t.addSeats(); // reset seats to 4
+                            t.resetPaying(); // reset paying customers to 0
                         }
                     }
                     for (Table t : tables) {
                         if (t.getSeats() == 0) {
                             t.setNotAvailable();
                         } else if (t.getAvailable() == true && t.getAssignedEmployee() == this) { // if table is
-                            // available
-                            // and employee is
-                            // assigned to it
+                            // available and employee is assigned to it
                             if (Main.dineQueue.size() != 0) { // if there are customers waiting to be seated
                                 assignCustomer(); // assign customer to table
                             }
@@ -105,10 +98,9 @@ public class DineIn_Employee extends Thread implements Runnable {
             }
         }
         try {
-            Main.closeStore.acquire();
-            Main.closeStore.release();
+            Main.closeStore.acquire(); // wait until customers leave
+            Main.closeStore.release(); // release other employee to close store
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         msg("all customers have been served and employee is closing diner");
@@ -138,14 +130,14 @@ public class DineIn_Employee extends Thread implements Runnable {
     public void assignCustomer() { // assigns customer to table
         try {
             Main.seatingMutex.acquire();
-            if (Main.dineLine.getQueueLength() >= 4) {
+            if (Main.dineLine.getQueueLength() >= 4) { // if there are 4 or more customers waiting to be seated
                 for (Table table : assignedTables) {
                     if (table.getSeats() > 0 && table.getAssignedEmployee() != null && Main.dineQueue.size() >= 4) {
                         for (int i = table.getSeats(); i > 0; i--) { // for each seat in table remove customer from line
                                                                      // and
                                                                      // add them to table
                             Customer c = Main.dineQueue.remove();
-                            table.addCustomer(c);
+                            table.addCustomer(c); // add customer to table
                             Main.seated++;
                             msg(c.getName() + " has been seated at " + table.getName());
                             Main.dineLine.release();

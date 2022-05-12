@@ -69,7 +69,7 @@ public class Customer extends Thread implements Runnable {
             e.printStackTrace();
         }
         if (Main.served == Main.numCustomers) {
-            Main.closeStore.release();
+            Main.closeStore.release(); // release the employees to close the store
         }
     }
 
