@@ -1,0 +1,189 @@
+Employees getting ready...
+Customers commuting to diner...
+[16] Customer 7: is commuting to diner
+[16] Customer 7: has decided to dine-in and got on the line.
+[88] Customer 0: is commuting to diner
+[88] Customer 0: has decided to dine-in and got on the line.
+[91] Table 0: Assigning Dinein_Employee 0 to Table 0        
+[91] Dinein_Employee 0: has been assigned to Table 0        
+[272] Customer 14: is commuting to diner
+[272] Customer 14: has decided to dine-in and got on the line.
+[279] Customer 13: is commuting to diner
+[279] Customer 13: has decided to dine-in and got on the line.
+[298] Customer 4: is commuting to diner
+[298] Customer 4: has decided to dine-in and got on the line.
+[312] Customer 8: is commuting to diner
+[312] Customer 8: has decided to dine-in and got on the line.
+[379] Customer 5: is commuting to diner
+[379] Customer 5: has decided to dine-in and got on the line.
+[452] Customer 12: is commuting to diner
+[453] Customer 12: has decided to dine-in and got on the line.
+[467] Customer 6: is commuting to diner
+[467] Customer 6: has decided to dine-in and got on the line.
+[480] Customer 2: is commuting to diner
+[480] Customer 2: has decided to dine-in and got on the line.
+[483] Customer 15: is commuting to diner
+[483] Customer 15: has decided to dine-in and got on the line.
+[584] Customer 11: is commuting to diner
+[584] Customer 11: has decided to dine-in and got on the line.
+[599] Customer 17: is commuting to diner
+[599] Customer 17: has decided to dine-in and got on the line.
+[627] Customer 1: is commuting to diner
+[627] Customer 1: has decided to dine-in and got on the line.
+[666] Customer 16: is commuting to diner
+[666] Customer 16: has decided to pick up and got on the pickup line.
+[666] Pickup_Employee 2: took the customers order and is preparing the order
+[728] Customer 19: is commuting to diner
+[728] Customer 19: has decided to dine-in and got on the line.
+[748] Customer 18: is commuting to diner
+[748] Customer 18: has decided to pick up and got on the pickup line.
+[758] Customer 9: is commuting to diner
+[758] Customer 9: has decided to dine-in and got on the line.
+[782] Pickup_Employee 2: has finished preparing the order and is waiting for customer to pay
+[782] Customer 16: is paying for their order
+[848] Customer 3: is commuting to diner
+[848] Customer 3: has decided to dine-in and got on the line.
+[896] Dinein_Employee 0: Customer 7 has been seated at Table 0
+[896] Dinein_Employee 0: Customer 0 has been seated at Table 0
+[896] Dinein_Employee 0: Customer 14 has been seated at Table 0
+[896] Customer 7: has been seated and is checking the menu and placing order
+[897] Customer 14: has been seated and is checking the menu and placing order
+[897] Dinein_Employee 0: Customer 13 has been seated at Table 0
+[896] Customer 0: has been seated and is checking the menu and placing order
+[897] Customer 13: has been seated and is checking the menu and placing order
+[898] Pickup_Employee 2: took the customers order and is preparing the order
+[897] Table 1: Assigning Dinein_Employee 0 to Table 1
+[898] Customer 16: has been served and is leaving the diner.
+[898] Dinein_Employee 0: has been assigned to Table 1
+[918] Customer 10: is commuting to diner
+[918] Customer 10: has decided to dine-in and got on the line.
+[940] Table 2: Assigning Dinein_Employee 1 to Table 2
+[940] Dinein_Employee 1: has been assigned to Table 2
+[1224] Pickup_Employee 2: has finished preparing the order and is waiting for customer to pay
+[1224] Customer 18: is paying for their order
+[1319] Dinein_Employee 0: Customer 4 has been seated at Table 1
+[1319] Customer 4: has been seated and is checking the menu and placing order
+[1319] Dinein_Employee 0: Customer 8 has been seated at Table 1
+[1319] Dinein_Employee 0: Customer 5 has been seated at Table 1
+[1319] Customer 8: has been seated and is checking the menu and placing order
+[1319] Customer 5: has been seated and is checking the menu and placing order
+[1319] Dinein_Employee 0: Customer 12 has been seated at Table 1
+[1320] Customer 12: has been seated and is checking the menu and placing order
+[1504] Customer 18: has been served and is leaving the diner.
+[1932] Dinein_Employee 1: Customer 6 has been seated at Table 2
+[1932] Dinein_Employee 1: Customer 2 has been seated at Table 2
+[1932] Customer 6: has been seated and is checking the menu and placing order
+[1932] Customer 2: has been seated and is checking the menu and placing order
+[1932] Dinein_Employee 1: Customer 15 has been seated at Table 2
+[1933] Dinein_Employee 1: Customer 11 has been seated at Table 2
+[1933] Customer 11: has been seated and is checking the menu and placing order
+[1933] Customer 15: has been seated and is checking the menu and placing order
+[1933] Dinein_Employee 0: is taking customer Customer 7 order
+[1972] Dinein_Employee 1: is taking customer Customer 6 order
+[2018] Dinein_Employee 1: is taking customer Customer 6 order
+[2018] Customer 6: has been served and is eating their food
+[2583] Dinein_Employee 1: is taking customer Customer 2 order
+[2635] Dinein_Employee 0: is taking customer Customer 0 order
+[2635] Customer 7: has been served and is eating their food
+[2815] Customer 6: is done eating and is waiting for their bill
+[3334] Dinein_Employee 1: is taking customer Customer 15 order
+[3334] Customer 2: has been served and is eating their food
+[3446] Dinein_Employee 1: is taking customer Customer 11 order
+[3446] Customer 15: has been served and is eating their food
+[3460] Dinein_Employee 0: is taking customer Customer 14 order
+[3460] Customer 0: has been served and is eating their food
+[3554] Customer 7: is done eating and is waiting for their bill
+[3864] Customer 2: is done eating and is waiting for their bill
+[3997] Customer 15: is done eating and is waiting for their bill
+[4048] Customer 0: is done eating and is waiting for their bill
+[4279] Customer 14: has been served and is eating their food
+[4279] Dinein_Employee 0: is taking customer Customer 13 order
+[4387] Dinein_Employee 1: is taking customer Customer 11 order
+[4387] Customer 11: has been served and is eating their food
+[4451] Customer 13: has been served and is eating their food
+[4451] Dinein_Employee 0: is taking customer Customer 4 order
+[4556] Dinein_Employee 0: is taking customer Customer 8 order
+[4556] Customer 4: has been served and is eating their food
+[4980] Customer 14: is done eating and is waiting for their bill
+[5172] Customer 11: is done eating and is waiting for their bill
+[5172] Customer 2: is paying their bill
+[5172] Customer 6: is paying their bill
+[5172] Customer 15: is paying their bill
+[5172] Customer 6: has been served and is leaving the diner.
+[5172] Customer 2: has been served and is leaving the diner.
+[5172] Customer 11: is paying their bill
+[5172] Customer 15: has been served and is leaving the diner.
+[5173] Customer 11: has been served and is leaving the diner.
+[5231] Customer 13: is done eating and is waiting for their bill
+[5245] Customer 8: has been served and is eating their food
+[5245] Dinein_Employee 0: is taking customer Customer 5 order
+[5540] Customer 4: is done eating and is waiting for their bill
+[6102] Dinein_Employee 0: is taking customer Customer 12 order
+[6102] Customer 5: has been served and is eating their food
+[6146] Customer 8: is done eating and is waiting for their bill
+[6856] Customer 5: is done eating and is waiting for their bill
+[7096] Customer 7: is paying their bill
+[7096] Customer 0: is paying their bill
+[7096] Customer 12: has been served and is eating their food
+[7096] Dinein_Employee 0: Customer 17 has been seated at Table 0
+[7096] Customer 14: is paying their bill
+[7096] Customer 13: is paying their bill
+[7097] Customer 14: has been served and is leaving the diner.
+[7096] Customer 17: has been seated and is checking the menu and placing order
+[7096] Dinein_Employee 0: Customer 1 has been seated at Table 0
+[7101] Dinein_Employee 0: Customer 19 has been seated at Table 0
+[7102] Dinein_Employee 0: Customer 9 has been seated at Table 0
+[7096] Customer 0: has been served and is leaving the diner.
+[7096] Customer 7: has been served and is leaving the diner.
+[7104] Customer 9: has been seated and is checking the menu and placing order
+[7103] Customer 19: has been seated and is checking the menu and placing order
+[7101] Customer 1: has been seated and is checking the menu and placing order
+[7097] Customer 13: has been served and is leaving the diner.
+[7218] Dinein_Employee 0: is taking customer Customer 17 order
+[7290] Customer 12: is done eating and is waiting for their bill
+[7302] Customer 17: has been served and is eating their food
+[7302] Customer 12: is paying their bill
+[7302] Dinein_Employee 1: Customer 3 has been seated at Table 2
+[7302] Customer 5: is paying their bill
+[7302] Customer 8: is paying their bill
+[7302] Customer 4: is paying their bill
+[7302] Customer 8: has been served and is leaving the diner.
+[7302] Customer 5: has been served and is leaving the diner.
+[7302] Customer 3: has been seated and is checking the menu and placing order
+[7302] Dinein_Employee 1: Customer 10 has been seated at Table 2
+[7302] Customer 12: has been served and is leaving the diner.
+[7303] Customer 10: has been seated and is checking the menu and placing order
+[7303] Customer 4: has been served and is leaving the diner.
+[7329] Dinein_Employee 0: is taking customer Customer 9 order
+[7443] Dinein_Employee 1: is taking customer Customer 3 order
+[7796] Customer 17: is done eating and is waiting for their bill
+[8060] Dinein_Employee 1: is taking customer Customer 10 order
+[8060] Customer 3: has been served and is eating their food
+[8080] Customer 9: has been served and is eating their food
+[8080] Dinein_Employee 0: is taking customer Customer 1 order
+[8558] Dinein_Employee 1: is taking customer Customer 10 order
+[8558] Customer 10: has been served and is eating their food
+[8584] Dinein_Employee 0: is taking customer Customer 19 order
+[8584] Customer 1: has been served and is eating their food
+[8662] Customer 1: is done eating and is waiting for their bill
+[8773] Customer 3: is done eating and is waiting for their bill
+[8796] Customer 9: is done eating and is waiting for their bill
+[9132] Dinein_Employee 0: is taking customer Customer 19 order
+[9132] Customer 19: has been served and is eating their food
+[9218] Customer 19: is done eating and is waiting for their bill
+[9286] Customer 17: is paying their bill
+[9286] Customer 9: is paying their bill
+[9286] Customer 9: has been served and is leaving the diner.
+[9286] Customer 1: is paying their bill
+[9286] Customer 1: has been served and is leaving the diner.
+[9286] Customer 19: is paying their bill
+[9286] Customer 17: has been served and is leaving the diner.
+[9287] Customer 19: has been served and is leaving the diner.
+[9294] Customer 10: is done eating and is waiting for their bill
+[9294] Pickup_Employee 2: is done serving customers
+[9294] Customer 3: is paying their bill
+[9294] Customer 10: is paying their bill
+[9294] Customer 3: has been served and is leaving the diner.
+[9294] Customer 10: has been served and is leaving the diner.
+[9519] Dinein_Employee 1: all customers have been served and employee is closing diner
+[9519] Dinein_Employee 0: all customers have been served and employee is closing diner
