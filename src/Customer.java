@@ -14,8 +14,7 @@ public class Customer extends Thread implements Runnable {
 
     @Override
     public void run() {
-        // int order = getOrder();
-        int order = 3;
+        int order = getOrder();
         try {
             Thread.sleep((long) (Math.random() * 1000));
             msg("is commuting to diner");
